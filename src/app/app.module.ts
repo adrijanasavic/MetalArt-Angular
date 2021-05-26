@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent
-  ],
+    HeaderComponent,
+    FooterComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
