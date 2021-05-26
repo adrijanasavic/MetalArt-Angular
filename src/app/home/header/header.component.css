@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #353942;
+    font-family: "MechanicalFree", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#header-img {
+    height: 24px;
+    vertical-align: baseline;
+    margin-left: 20px;
+}
+
+.header-navbar {
+    border-bottom: 2px solid #848991;
+    padding: 0px;
+    color: #909493;
+}
+
+.header-icons {
+    font-size: 24px;
+    color: #848991;
+}
+
+#cart_number {
+    position: relative;
+    top: -10px;
+    left: 16px;
+    color: white;
+}
+
+#header_shopping_cart {
+    list-style: none;
+}
+
+#header_shopping_cart a {
+    padding-left: 0px;
+}

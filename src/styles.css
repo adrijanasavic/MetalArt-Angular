@@ -1,4 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: "Iron";
+    src: local("Iron"), url(./assets/IronManOfWar001ANcv-6d2Y.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MechanicalFree";
+    src: local("MechanicalFree"), url(./assets/MechanicalFree-8MR4Z.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "MetalHead";
+    src: local("MetalHead"), url(./assets/MetalHead-GLqZ.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Motorstrike";
+    src: local("Motorstrike"), url(./assets/Motorstrike-7d0V.ttf) format("truetype");
+}

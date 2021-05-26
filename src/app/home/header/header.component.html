@@ -1,0 +1,50 @@
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark g-font-size-12 header-navbar">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/">
+                <img id="header-img" src="../../assets/metal-art-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_navbar" aria-controls="header_navbar" aria-expanded="false" aria-label="Toggle navigation" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div [class.collapse]="isNavbarCollapsed" class="collapse navbar-collapse justify-content-md-end" id="header_navbar">
+                <ul class="navbar-nav justify-content-md-end">
+                    <li class="nav-item active" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <a class="nav-link" routerLink="/out-story">Out Story</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <a class="nav-link" routerLink="/shop">Shop</a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                        <a class="nav-link" routerLink="/gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/login" class="nav-link">
+                        Log In
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                        Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <li class="nav-item" id="header_shopping_cart">
+                <a routerLink="/cart" class="nav-link">
+                    <span id="cart_number"></span>
+                    <i class="fa fa-shopping-cart header-icons" aria-hidden="true"></i>
+                </a>
+            </li>
+
+        </div>
+    </nav>
+</section>
