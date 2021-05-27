@@ -1,0 +1,193 @@
+#signup_main_div {
+    background-image: url('../../../assets/metal-background.jpg');
+    background-size: cover;
+    height: calc(86vh - 45px);
+    padding-top: 30px;
+}
+
+#signup_container {
+    width: 300px;
+    height: 370px;
+    background-color: white;
+    padding: 40px 50px 20px 50px;
+}
+
+#signup_signup_link {
+    color: #000000;
+    cursor: pointer;
+}
+
+#signup_form input {
+    border: none;
+    border-bottom: 2px solid #cdcdcd;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#signup_btn {
+    background-color: #343941;
+    border-radius: 0;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    #signup_main_div {
+        height: calc(100vh - 115px);
+    }
+}
+
+.text-shadow {
+    color: #314448;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 40)
+}
+
+@-webkit-keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounceIn {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+.hvr-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow
+}
+
+.hvr-shadow:active,
+.hvr-shadow:focus,
+.hvr-shadow:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5)
+}
+
+.hvr-grow-shadow {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform
+}
+
+.hvr-grow-shadow:active,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.shadow1::before,
+.shadow1::after {
+    content: '';
+    position: absolute;
+    top: 80%;
+    bottom: 13px;
+    display: block;
+    width: 50%;
+    -webkit-box-shadow: 0 15px 15px rgb(37, 37, 37);
+    box-shadow: 0 15px 15px rgb(37, 37, 37);
+    z-index: -1;
+    left: 10px;
+}
+
+.shadow1::before {
+    background: transparent;
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.shadow1::after {
+    background: transparent;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}

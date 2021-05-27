@@ -1,0 +1,32 @@
+<section>
+    <div class="container-fluid" id="signup_main_div">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center g-m-t-30px animated bounceIn">
+                <div class="text-center" id="signup_container">
+                    <h1 class="text-shadow">Sign Up</h1>
+                    <form id="signup_form" class="g-font-size-12" autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm hvr-shadow" #fnamesignup placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-sm hvr-shadow" #lnamesignup placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-sm hvr-shadow" #emailsignup placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-sm hvr-shadow" #passwordsignup placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button id="signup_btn" type="button" class="btn g-font-size-12 w-100 hvr-grow-shadow">
+                            Log In</button>
+                        </div>
+                        <p class="g-font-size-12 g-m-b-30px shadow1">Already a member?
+                            <span routerLink="/login" class="font-weight-bold" id="signup_signup_link">Log In</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
