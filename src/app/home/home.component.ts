@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as AOS from 'aos'; 
 
 @Component({
@@ -8,12 +9,18 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _router: Router,
+
+  ) { }
 
   ngOnInit(): void {
     AOS.init({
       duration: 1200,
     })
+    
   }
-
+  openOurStory(){
+    this._router.navigate(['/out-story']);
+  }
 }
