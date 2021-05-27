@@ -9,6 +9,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OutStoryComponent } from './out-story/out-story.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OutStoryComponent } from './out-story/out-story.component';
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent,
-    OutStoryComponent  ],
+    OutStoryComponent,
+    GalleryComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

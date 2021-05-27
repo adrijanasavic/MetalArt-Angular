@@ -1,0 +1,19 @@
+h2 {
+    font-family: "Motorstrike", Arial, Helvetica, sans-serif;
+}
+
+.about-picture:hover {
+    transform: scale(1.1);
+    opacity: 0.90;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+}
