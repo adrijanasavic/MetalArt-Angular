@@ -1,0 +1,30 @@
+.category-product-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 240px;
+}
+
+.category-product-name {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.category-product-price {
+    color: #909090;
+}
+
+.category-product-old-price {
+    text-decoration: line-through;
+}
+
+@media(max-width: 575px) {
+    .category-product-img {
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .category-product-div {
+        text-align: center!important;
+    }
+}

@@ -1,0 +1,13 @@
+<section>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 category-product-div img-fluid" *ngFor="let product of products" (click)="openProductDetails(product)">
+            <div class="category-product-img" [style.background-image]="'url(' + product.imgSrc + ')'"></div>
+            <p class="category-product-name"><strong>{{product.name}}</strong></p>
+            <p *ngIf="product.oldPrice == 0" class="category-product-price"><span>&#36;</span> {{product.price}},00
+            </p>
+            <p *ngIf="product.oldPrice != 0" class="category-product-price"><span class="category-product-old-price"><span>&#36;</span> {{product.oldPrice}},00
+                </span> <span>&#36;</span> {{product.price}},00
+            </p>
+        </div>
+    </div>
+</section>
