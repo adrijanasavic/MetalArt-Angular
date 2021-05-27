@@ -1,0 +1,35 @@
+hr {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.shop-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 240px;
+    opacity: 0.9;
+}
+
+.shop-img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.shop-name {
+    height: 23%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+@media(max-width: 575px) {
+    .shop-img {
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer-p {
+    padding-bottom: 350px;
+}

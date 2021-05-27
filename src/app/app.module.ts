@@ -11,6 +11,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { OutStoryComponent } from './out-story/out-story.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ContactComponent } from './contact/contact.component';
     PageNotFoundComponent,
     OutStoryComponent,
     GalleryComponent,
-    ContactComponent  ],
+    ContactComponent,
+    LoginComponent,
+    SignupComponent,
+    ShopComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,
