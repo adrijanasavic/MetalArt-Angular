@@ -1,0 +1,47 @@
+.con-contact {
+    margin-top: 30px;
+    margin-bottom: 320px;
+}
+
+h1 {
+    font-family: "Motorstrike", Arial, Helvetica, sans-serif;
+}
+
+#contact_form input,
+#contact_form textarea {
+    border: none;
+    border-bottom: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#contact_form textarea {
+    max-height: 40px;
+}
+
+#subscribe_form input {
+    border: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#subscribe_now_btn {
+    height: 28px;
+    background-color: #343a40;
+    color: white;
+}
+
+#contact_form_btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 70px;
+}
+
+@media(max-width:575px) {
+    #subscribe_now_btn {
+        margin-top: 15px!important;
+    }
+}

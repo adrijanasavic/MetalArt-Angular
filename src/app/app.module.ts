@@ -10,6 +10,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OutStoryComponent } from './out-story/out-story.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     FooterComponent,
     PageNotFoundComponent,
     OutStoryComponent,
-    GalleryComponent  ],
+    GalleryComponent,
+    ContactComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

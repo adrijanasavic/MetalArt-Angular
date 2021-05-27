@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'footer', component: FooterComponent},
   {path: 'out-story', component: OutStoryComponent},
   {path: 'gallery', component: GalleryComponent},
+  {path: 'contact', component: ContactComponent},
   { path: '**', component: PageNotFoundComponent }
 
 
