@@ -6,7 +6,7 @@
                     <div class="text-center">
                         <h1>Contact Us</h1>
                     </div>
-                    <form id="contact_form" class="g-font-size-12" autocomplete="off">
+                    <form (ngSubmit)="sendMessage(f); f.reset()" #f="ngForm" id="contact_form" class="g-font-size-12" autocomplete="off">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">

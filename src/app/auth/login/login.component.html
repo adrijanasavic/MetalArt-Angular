@@ -4,7 +4,7 @@
             <div class="col-12 d-flex justify-content-center bounceIn">
                 <div class="text-center" id="login_container">
                     <h1 class="text-shadow">Log In</h1>
-                    <p class="mb-4 shadow1 ">New to this site?</p>
+                    <p class="mb-4 shadow1 ">New to this site?<span routerLink="/signup" id="login_signup_link">Sign Up</span></p>
                     <form id="login_form" class="g-font-size-12" autocomplete="off">
                         <div class="form-group">
                             <input type="email" class="form-control form-control-sm hvr-shadow" #emailLogin placeholder="Email">
@@ -14,7 +14,7 @@
                         </div>
                         <p class="text-left" id="login_forgot_password">Forgot password?</p>
                         <div class="form-group">
-                            <button id="login_btn" type="button" class="btn g-font-size-12 w-100 hvr-grow-shadow">Log In</button>
+                            <button id="login_btn" type="button" class="btn g-font-size-12 w-100 hvr-grow-shadow" (click)="login(emailLogin.value, passwordLogin.value); emailLogin.value=passwordLogin.value=''">Log In</button>
                         </div>
                     </form>
                 </div>

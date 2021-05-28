@@ -1,0 +1,30 @@
+<section>
+    <div class="container g-font-size-12 footer-p">
+        <div class="row mt-4 pb-5 ">
+            <div class="col-12 d-flex justify-content-between product-container">
+                <div><span id="product_router_link"><a routerLink="/">Home</a>/<a routerLink="/shop">Shop</a>/</span>{{selectedProduct.name}}</div>
+                <div><span [ngClass]="{'disabledPrevNext': prevNextProducts[0] == 0}" class="product-prev-next" (click)="goToPrevOrNextProduct('prev'); quantity.value=''">&#60; Prev</span> | <span [ngClass]="{'disabledPrevNext': prevNextProducts[1] == 0}"
+                        class="product-prev-next" (click)="goToPrevOrNextProduct('next'); quantity.value=''" id="product_next">Next &#62;</span></div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <img [src]=[selectedProduct.imgSrc] alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 mt-3">
+                <p id="product_name">{{selectedProduct.name}}</p>
+
+                <p class="product-price" *ngIf="selectedProduct.oldPrice == 0"><span>&#36;</span> {{selectedProduct.price}},00
+                </p>
+                <p class="product-price" *ngIf="selectedProduct.oldPrice != 0"><span class="product-old-price"><span>&#36;</span> {{selectedProduct.oldPrice}},00
+                    </span> <span>&#36;</span> {{selectedProduct.price}},00
+                </p>
+                <p>{{selectedProduct.description}}</p>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" class="form-control form-control-sm product_quantity" id="quantity" [min]="1" [max]="99" #quantity>
+                </div>
+                <button class="btn btn-dark btn-sm w-100 g-font-size-12" (click)="addToCart(selectedProduct, quantity.value); quantity.value=''">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

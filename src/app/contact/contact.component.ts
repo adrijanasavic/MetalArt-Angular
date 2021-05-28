@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { HomeService } from '../shared/services/home.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _homeService: HomeService,
+    private _snackBar: MatSnackBar,
+  ) { }
 
   ngOnInit(): void {
+  }
+  
+  emailSubscribe(email: string) {
+    this._homeService.emitEmailChangeEvent(email);
+  }
+
+  sendMessage(form: NgForm){
+    console.log(form.value);
   }
 
 }

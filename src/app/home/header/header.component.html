@@ -25,12 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/contact">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" *ngIf="!_authService.isLogged()">
                         <a routerLink="/login" class="nav-link">
                         Log In
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" *ngIf="_authService.isLogged()">
                         <a class="nav-link">
                         Log Out
                         </a>
@@ -38,9 +38,9 @@
                 </ul>
             </div>
 
-            <li class="nav-item" id="header_shopping_cart">
+            <li class="nav-item" id="header_shopping_cart" *ngIf="_authService.isLogged()">
                 <a routerLink="/cart" class="nav-link">
-                    <span id="cart_number"></span>
+                    <span id="cart_number">{{cartNumber}}</span>
                     <i class="fa fa-shopping-cart header-icons" aria-hidden="true"></i>
                 </a>
             </li>

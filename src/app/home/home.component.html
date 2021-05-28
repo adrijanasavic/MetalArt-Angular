@@ -8,7 +8,7 @@
                 <h2>Art company</h2>
             </div>
             <p>Beauty that comes from trust</p>
-            <button type="button" class="btn-out text-white">View Gallery</button>
+            <button type="button" class="btn-out text-white" (click)="openGallery()">View Gallery</button>
         </div>
     </div>
 </section>
@@ -45,7 +45,7 @@
     <div class="parallax1">
         <div class="text-parallax1 text-white text-center" data-aos="flip-right">
             <h1><i>"Art washes away from the soul the dust of everyday life." ━ Pablo Picasso</i></h1>
-            <button type="button" class="btn-out">OUR STORY</button>
+            <button type="button" class="btn-out" (click)="openOurStory()">OUR STORY</button>
         </div>
 
     </div>
@@ -54,21 +54,21 @@
 <!--Product-->
 <!--CARD-->
 <section>
-    <div class="container ">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 card-content-cat" data-item="">
-                <div class="card-item-cat" data-aos="flip-right">
-                    <div class="text-center text-white">
-                        <h3 class="card-text text-uppercase">Name</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 card-content-cat " data-item=" ">
+                <div class="card-item-cat " data-aos="flip-right " [style.background-image]=" 'url(' + category.imgSrc + ')'" *ngFor="let category of categories">
+                    <div class="text-center text-white" [routerLink]="[ '/shop', category.id, category.name]">
+                        <h3 class="card-text text-uppercase ">{{category.name}}</h3>
                         <hr>
-                        <p class="card-text m-3">Descrition</p>
+                        <p class="card-text m-3 ">{{category.des}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row ">
             <div class="col-12 d-flex justify-content-center" data-aos="zoom-in">
-                <button class="home_load_more_btn">Load more</button>
+                <button class="home_load_more_btn" (click)="openShop()">Load more</button>
             </div>
         </div>
     </div>
@@ -76,9 +76,9 @@
 
 <section>
     <div class="parallax2">
-        <div class="text-parallax2" data-aos="zoom-in">
+        <div class="text-parallax2 " data-aos="zoom-in">
             <h1>We have a wide variety of metal art for sale</h1>
-            <button type="button" class="btn-out text-uppercase">Contact us</button>
+            <button type="button" class="btn-out text-uppercase" (click)="openContact()">Contact us</button>
         </div>
     </div>
 </section>

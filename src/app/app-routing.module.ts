@@ -8,6 +8,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { OutStoryComponent } from './out-story/out-story.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CategoryComponent } from './shop/category/category.component';
 import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
@@ -18,7 +19,9 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
-  {path: 'shop', component: ShopComponent},
+  {path: 'shop', component: ShopComponent, children: [
+    {path: ':id/:name', component: CategoryComponent}
+  ]},
   { path: '**', component: PageNotFoundComponent }
 
 

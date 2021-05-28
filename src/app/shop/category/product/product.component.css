@@ -1,0 +1,41 @@
+#product_router_link a {
+    font-weight: bolder;
+    color: black!important;
+}
+
+#product_router_link a :hover {
+    color: black;
+}
+
+#product_name {
+    font-size: 25px;
+}
+
+.product-price {
+    font-size: 20px;
+}
+
+.product_quantity {
+    width: 52px;
+}
+
+.disabledPrevNext {
+    color: #909090;
+}
+
+.product-prev-next {
+    cursor: pointer;
+}
+
+.product-old-price {
+    text-decoration: line-through;
+}
+
+.footer-p {
+    padding-bottom: 310px;
+}
+
+::ng-deep .my-class {
+    margin-top: 180px;
+    width: 500px;
+}
