@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { ShopService } from 'src/app/shared/services/shop.service';
+import { takeUntil } from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-header',
@@ -50,7 +52,5 @@ export class HeaderComponent implements OnInit {
     this._router.navigate(['/signin']);
   }
 }
-function takeUntil(_completed: Subject<unknown>): import("rxjs").OperatorFunction<any, unknown> {
-  throw new Error('Function not implemented.');
-}
+
 

@@ -1,0 +1,48 @@
+#product_order_form {
+    width: 300px;
+}
+
+#product_order_form input,
+#product_order_form textarea,
+#product_order_form select {
+    border: none;
+    border-bottom: 2px solid #bcbcbc;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#product_order_form label {
+    color: #bcbcbc;
+    margin-bottom: 0px;
+}
+
+#product_order_form textarea {
+    min-height: 30px;
+    max-height: 120px;
+}
+
+#product_order_form_btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 7px 70px;
+    margin-top: 20px;
+}
+
+#product_order_payment_method_container label {
+    margin-bottom: 0px;
+}
+
+#product_order_select_option {
+    font-size: 10px;
+    color: #bcbcbc;
+}
+
+#product_order_hr {
+    margin: 0px;
+}
+
+#product_order_hear {
+    color: #bcbcbc;
+}

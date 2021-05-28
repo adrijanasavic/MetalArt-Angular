@@ -27,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryCart } from './shared/in-memory-local-base/in-memory-cart';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CartComponent } from './cart/cart.component';
+import { ProductOrderComponent } from './cart/product-order/product-order.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     ShopComponent,
     CategoryComponent,
     ProductComponent,
-    MeetYouDialogComponent,],
+    MeetYouDialogComponent,
+    CartComponent,
+    ProductOrderComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,

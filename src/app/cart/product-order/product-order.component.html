@@ -1,0 +1,65 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <form [formGroup]="orderForm" (ngSubmit)="onSubmit()" class="g-font-size-12" autocomplete="off" id="product_order_form">
+                    <h6 class="g-m-t-15px g-m-b-30px text-center">Product Order Form</h6>
+                    <div class="form-group">
+                        <label for="product_order_fname_field">First Name</label>
+                        <input type="text" class="form-control form-control-sm" id="product_order_fname_field" formControlName="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="product_order_lname_field">Last Name</label>
+                        <input type="text" class="form-control form-control-sm" id="product_order_lname_field" formControlName="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="product_order_email_field">Email *</label>
+                        <input type="email" class="form-control form-control-sm" id="product_order_email_field" formControlName="email">
+                        <span class="g-error-message" *ngIf="!orderForm.get('email').valid && orderForm.get('email').touched">Email is required!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="product_order_phone_number_field">Phone Number</label>
+                        <input type="text" class="form-control form-control-sm" id="product_order_phone_number_field" formControlName="phonenumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="product_order_address_field">Address</label>
+                        <input type="text" class="form-control form-control-sm" id="product_order_address_field" formControlName="address">
+                    </div>
+                    <div class="form-group" id="product_order_payment_method_container">
+                        <label>Payment method:</label><br>
+                        <hr id="product_order_hr">
+                        <span id="product_order_select_option">Select an option</span><br>
+                        <label>
+                            <input type="radio" name="paymentmethod" value="creditcard" formControlName="paymentmethod">
+                            <span>Credit Card</span>
+                        </label><br>
+                        <label>
+                            <input type="radio" name="paymentmethod" value="paypal" formControlName="paymentmethod">
+                            <span>PayPal</span>
+                        </label><br>
+                        <label>
+                            <input type="radio" name="paymentmethod" value="ondelivery" formControlName="paymentmethod">
+                            <span>Payment on Delivery</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <span id="product_order_hear">How did you hear about us?</span><br>
+                        <select class="form-control form-control-sm" id="product_order_about_us" aria-placeholder="How did you hear about us?" formControlName="aboutus">
+                            <option value=""></option>
+                            <option value="instagram">Instagram</option>
+                            <option value="friend">Friend</option>
+                            <option value="facebook">Facebook</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product_order_message_field">Comment</label>
+                        <textarea class="form-control form-control-sm" id="product_order_message_field" rows="3" formControlName="comment"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="subscribe" id="product_order_form_btn">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
