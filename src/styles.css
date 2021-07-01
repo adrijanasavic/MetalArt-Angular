@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
-body {
-    height: 100%;
+body,
+html {
+    font-family: "Motorstrike", Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    /*horizontal*/
+    overflow-y: scroll;
+    /*vertical*/
 }
 
 body {
